@@ -1,0 +1,66 @@
+/* CSS defines the style*/
+/*This is a CSS comment*/
+/* "p" means Paragraph*/
+/* "*" means apply to everything */
+/* rem is a size type, kind of like a unit of measure like pixels*/
+/* 
+p {
+    color: orange;
+}
+*/
+
+*{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* the .container referes to the container class in the HTML file*/
+
+.container {
+    width:300px;
+    height: 300px;
+    /* margin can have up to 4 parameters specifying the distance from the edges, the params only need a space betwwen them*/
+    margin: 0 auto;
+}
+
+.card {
+    border: 6px solid blue;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    background-image: cross-fade();
+    /* american spelling of centre*/
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*this part keeps the front and back from displaying at the same time*/
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /*position absolute keeps back from moving outside the div*/
+    position: absolute;
+}
+.back{
+    transform: rotateY(180deg);
+    background-color: yellow;
+
+}
+
+/* this class doesnt exist in the HTML, but will be passed to Java*/
+.flipped {
+    transform: rotateY(180deg);
+}
