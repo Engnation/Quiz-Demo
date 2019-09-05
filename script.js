@@ -42,13 +42,13 @@ function getData() {
 
 
 
-//function prevCard() {
-//
-//}
+function prevCard() {
 
-//function flipCard() {
-//    card.classList.toggle('flipped');
-//}
+}
+
+function flipCard() {
+    card.classList.toggle('flipped');
+}
 
 function nextCard() {
     card.classList.remove('flipped');
